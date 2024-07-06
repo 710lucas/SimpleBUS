@@ -32,6 +32,9 @@ export class CPU implements Module{
 
         this.systemBus.execute();
 
+        while(this.systemBus.readControl())
+            this.systemBus.execute();
+
         console.log()
     }
 }

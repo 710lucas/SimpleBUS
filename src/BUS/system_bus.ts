@@ -109,10 +109,6 @@ export class SystemBus{
             }
         }
 
-        if(this.controlBus.read()){
-            this.execute()
-        }
-
     }
 
 }
